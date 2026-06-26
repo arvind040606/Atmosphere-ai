@@ -24,7 +24,7 @@ export function OWMTileLayer({ layerId }: OWMTileLayerProps) {
   const map   = useMap();
   const ref   = useRef<L.TileLayer | null>(null);
   const owmKey = import.meta.env.VITE_OWM_API_KEY ?? "";
-  const [errorCount, setErrorCount] = useState(0);
+  const [, setErrorCount] = useState(0);
   const MAX_ERROR_THRESHOLD = 5; // Hide layer after repeated failures
 
   useEffect(() => {

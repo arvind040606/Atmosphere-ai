@@ -75,14 +75,7 @@ interface RawForecastResponse {
   forecast: { forecastday: RawDay[] };
 }
 
-interface RawSearchResult {
-  id: number;
-  name: string;
-  region: string;
-  country: string;
-  lat: number;
-  lon: number;
-}
+
 
 function mapCurrent(raw: RawCurrent): CurrentWeather {
   const isDay = raw.is_day === 1;

@@ -40,7 +40,7 @@ export function useGeolocation(): GeolocationState {
   const [coords, setCoords] = useState<GeoCoords | null>(null);
   const [errorMsg, setError] = useState<string | null>(null);
   const permRef = useRef<PermissionStatus | null>(null);
-  const requestTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const requestTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);;
 
   // Core locate call — fires the browser's native geolocation API.
   const doLocate = useCallback(() => {

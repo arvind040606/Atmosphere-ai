@@ -1,6 +1,5 @@
 import { weatherClient } from "./apiClient";
-import type { CitySearchResult, Coordinates } from "../types/weather";
-
+import type { CitySearchResult } from "../types/weather";
 /**
  * Nominatim API response type for search results
  * Full type: https://nominatim.org/release-docs/latest/api/Search/

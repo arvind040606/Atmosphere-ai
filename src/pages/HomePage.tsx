@@ -208,52 +208,72 @@ export function HomePage({ onOpenMap }: { onOpenMap: () => void }) {
 
         </motion.div>
         
-      {/* ================= Footer ================= */}
+      {/* ================= Minimal Professional Footer ================= */}
 
-<footer className="mt-16 border-t border-white/10 py-8">
-  <div className="flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
+<footer
+  className="
+    mt-16
+    rounded-2xl
+    border
+    border-slate-200
+    dark:border-white/10
+    bg-white/90
+    dark:bg-slate-900/70
+    backdrop-blur-xl
+    shadow-lg
+    dark:shadow-none
+    px-8
+    py-8
+  "
+>
+  <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
 
+    {/* Left */}
     <div>
-      <h3 className="text-sm font-semibold text-white">
+      <h3 className="text-base font-semibold text-slate-900 dark:text-white">
         Atmosphere AI
       </h3>
 
-      <p className="mt-1 text-xs text-white/50">
+      <p className="mt-1 text-sm text-slate-600 dark:text-white/60">
         Professional Weather Intelligence Platform
       </p>
     </div>
 
+    {/* Center */}
     <div className="text-center">
-      <p className="text-sm text-white/70">
-        Designed & Developed by
-        <span className="ml-1 font-medium text-blue-400">
-          Arvind Madaan
+      <p className="text-sm text-slate-700 dark:text-white/70">
+        Designed & Developed by{" "}
+        <span className="font-semibold text-blue-600 dark:text-blue-400">
+          Arvind
         </span>
       </p>
 
-      <p className="mt-1 text-xs text-white/40">
-        © 2026 All Rights Reserved
+      <p className="mt-1 text-xs text-slate-500 dark:text-white/40">
+        © 2026 Atmosphere AI • All Rights Reserved
       </p>
     </div>
 
+    {/* Right */}
     <div className="flex items-center gap-5">
+
       <a
         href="https://github.com/arvind040606"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-sm text-white/60 transition hover:text-blue-400"
+        className="text-sm font-medium text-slate-600 transition hover:text-blue-600 dark:text-white/60 dark:hover:text-blue-400"
       >
         GitHub
       </a>
 
       <a
-        href="https://www.linkedin.com/in/arvindmadaan2704"
+        href="https://linkedin.com/in/arvindmadaan2704"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-sm text-white/60 transition hover:text-blue-400"
+        className="text-sm font-medium text-slate-600 transition hover:text-blue-600 dark:text-white/60 dark:hover:text-blue-400"
       >
         LinkedIn
       </a>
+
     </div>
 
   </div>

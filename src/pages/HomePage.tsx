@@ -208,122 +208,58 @@ export function HomePage({ onOpenMap }: { onOpenMap: () => void }) {
 
         </motion.div>
         
-              {/* ================= Footer ================= */}
+      {/* ================= Footer ================= */}
 
-        <motion.footer
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative mt-20 overflow-hidden rounded-3xl border border-white/10"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(10,15,25,.92), rgba(5,10,20,.98))",
-            backdropFilter: "blur(24px)",
-            WebkitBackdropFilter: "blur(24px)",
-            boxShadow:
-              "0 20px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.05)",
-          }}
-        >
-          {/* Blue Glow */}
-          <div
-            className="absolute inset-0 opacity-20"
-            style={{
-              background:
-                "radial-gradient(circle at top, rgba(43,127,255,.6), transparent 65%)",
-            }}
-          />
+<footer className="mt-16 border-t border-white/10 py-8">
+  <div className="flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
 
-          <div className="relative px-8 py-14 text-center">
+    <div>
+      <h3 className="text-sm font-semibold text-white">
+        Atmosphere AI
+      </h3>
 
-            <div className="text-6xl mb-5">
-              🌦️
-            </div>
+      <p className="mt-1 text-xs text-white/50">
+        Professional Weather Intelligence Platform
+      </p>
+    </div>
 
-            <h2
-              className="text-4xl font-bold"
-              style={{
-                color: "#fff",
-                fontFamily: "var(--font-display)",
-              }}
-            >
-              Atmosphere AI
-            </h2>
+    <div className="text-center">
+      <p className="text-sm text-white/70">
+        Designed & Developed by
+        <span className="ml-1 font-medium text-blue-400">
+          Arvind Madaan
+        </span>
+      </p>
 
-            <p
-              className="mt-4 text-base"
-              style={{ color: "rgba(255,255,255,.65)" }}
-            >
-              Professional Weather Intelligence Platform
-            </p>
+      <p className="mt-1 text-xs text-white/40">
+        © 2026 All Rights Reserved
+      </p>
+    </div>
 
-            <div
-              className="mx-auto my-8 h-px w-32"
-              style={{
-                background:
-                  "linear-gradient(90deg,transparent,#2b7fff,transparent)",
-              }}
-            />
+    <div className="flex items-center gap-5">
+      <a
+        href="https://github.com/arvind040606"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-white/60 transition hover:text-blue-400"
+      >
+        GitHub
+      </a>
 
-            <p
-              className="uppercase tracking-[0.35em] text-xs"
-              style={{ color: "rgba(255,255,255,.45)" }}
-            >
-              Designed & Developed By
-            </p>
+      <a
+        href="https://www.linkedin.com/in/arvindmadaan2704"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-white/60 transition hover:text-blue-400"
+      >
+        LinkedIn
+      </a>
+    </div>
 
-            <h1
-              className="mt-3 text-5xl font-black"
-              style={{
-                background:
-                  "linear-gradient(90deg,#60a5fa,#38bdf8,#22d3ee,#3b82f6)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              Arvind Madaan
-            </h1>
+  </div>
+</footer>
 
-            <div className="mt-10 flex justify-center gap-5">
-
-              <a
-                href="https://github.com/arvind040606"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl border border-white/10 px-6 py-3 transition-all hover:scale-105 hover:bg-blue-500/20"
-                style={{
-                  color: "#fff",
-                  background: "rgba(255,255,255,.04)",
-                }}
-              >
-                GitHub
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/arvindmadaan2704/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl border border-white/10 px-6 py-3 transition-all hover:scale-105 hover:bg-sky-500/20"
-                style={{
-                  color: "#fff",
-                  background: "rgba(255,255,255,.04)",
-                }}
-              >
-                LinkedIn
-              </a>
-
-            </div>
-
-            <p
-              className="mt-10 text-sm"
-              style={{ color: "rgba(255,255,255,.45)" }}
-            >
-              © 2026 Atmosphere AI • All Rights Reserved
-            </p>
-
-          </div>
-        </motion.footer>
-
-      </AppLayout>
-    </>
-  );
+</AppLayout>
+</>
+);
 }
